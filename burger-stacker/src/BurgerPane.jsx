@@ -1,7 +1,7 @@
 import BurgerStack from './BurgerStack'
 import ClearBurger from './ClearBurger'
 
-export default function BurgerPane(props) {
+const BurgerPane = (props) => {
     return (
         <div>
             <BurgerStack clickedIngredients={props.clickedIngredients} />
@@ -9,3 +9,4 @@ export default function BurgerPane(props) {
         </div>
     )
 }
+export default BurgerPane

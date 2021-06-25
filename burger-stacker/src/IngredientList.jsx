@@ -1,6 +1,6 @@
 import Ingredients from './Ingredients'
 
-export default function IngredientList(props) {
+const IngredientList = (props) => {
     // map over an array of ingredients
     // create an ingredient component for each item in the array
     let ingredientComponents = props.ingredients.map((item) => (
@@ -16,3 +16,4 @@ export default function IngredientList(props) {
         </ul>
     )
 }
+export default IngredientList

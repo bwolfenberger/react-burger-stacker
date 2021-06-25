@@ -1,6 +1,6 @@
 import Ingredients from './Ingredients'
   
-export default function BurgerStack (props) {
+const BurgerStack = (props) => {
     let burgerIngredients = props.clickedIngredients.map((item) => (
         <li>
             <Ingredients ingredients={item.name} color={item.color} />
@@ -13,3 +13,4 @@ export default function BurgerStack (props) {
         </ul>
     )
 }
+export default BurgerStack
